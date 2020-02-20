@@ -1,9 +1,11 @@
 # Hide Blocked Messages
 This repository is for those looking to hide the "1 blocked message - show message" messages from discord. If reading this far into the future, please note that this may not work, so don't complain to me if it stops working.
-
-**The script will need to re-pasted in every time you start discord. As such if you somehow fuck something up, restarting discord should fix whatever you broke.**
-_**I hold no responsibility for you breaking your discord or other things happening**_
-
+<br>
+<br>
+###  **The script will need to re-pasted in every time you start discord. As such if you somehow fuck something up, restarting discord should fix whatever you broke.**
+#### _**I hold no responsibility for you breaking your discord or other things happening**_
+<br>
+<br>
 To use these, while discord is open, press *Ctrl + Shift + I*. You will be presented with a giant console.
 First and foremost you'll be greeted with a giant message telling you that pasting anything inside the console has a high chance of being a scam.
 If you are unsure about the legitmacy of this script. Stop and don't continue. If you're a risk taker/ can actually read javascript and can verify the legitimacy of the script ignore the message.
@@ -21,7 +23,7 @@ Some things to note:
 function hideBlocked(){
     const blocked = document.querySelectorAll('[class^="groupStart"]'); // Find all "Blocked Messages"
     blocked.forEach(blokMsg => {
-        if(blokMsg.style.display !== "none") blokMsg.style.display = "none"; // Hide the message if it's not already hidden. Hey presto, no more blocked person.
+        if(blokMsg.style.display !== "none") blokMsg.style.display = "none"; // Hide the message if it's not already hidden.
     });
 };
 setInterval(hideBlocked, 500); // Repeat every half second. Recommended to keep at 500, but raise/ lower if you wish.

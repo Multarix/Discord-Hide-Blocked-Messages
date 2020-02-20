@@ -6,7 +6,7 @@ This repository is for those looking to hide the "1 blocked message - show messa
 #### _**I hold no responsibility for you breaking your discord or other things happening**_
 <br>
 <br>
-To use these, while discord is open, press *Ctrl + Shift + I*. You will be presented with a giant console.
+To use these, while discord is open, press <i>Ctrl + Shift + I</i>. You will be presented with a giant console.
 First and foremost you'll be greeted with a giant message telling you that pasting anything inside the console has a high chance of being a scam.
 If you are unsure about the legitmacy of this script. Stop and don't continue. If you're a risk taker/ can actually read javascript and can verify the legitimacy of the script ignore the message.
 

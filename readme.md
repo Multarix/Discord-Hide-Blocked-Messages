@@ -10,8 +10,13 @@ To use these, while discord is open, press <i>Ctrl + Shift + I</i>. You will be 
 First and foremost you'll be greeted with a giant message telling you that pasting anything inside the console has a high chance of being a scam.
 If you are unsure about the legitmacy of this script. Stop and don't continue. If you're a risk taker/ can actually read javascript and can verify the legitimacy of the script ignore the message.
 
-Copy and paste the script into the console and hit enter.
+Copy and paste the script into the console and hit enter.<br>
 
+## New Userscript (tested with ViolentMonkey)
+Install Userscript: https://github.com/Multarix/Discord-Hide-Blocked-Messages/raw/master/script.user.js
+<br>
+<br>
+<br>
 Some things to note:
 - The "new message" banner will still appear.
 - Closing or updating discord will stop the script, requiring you to re-enable it.

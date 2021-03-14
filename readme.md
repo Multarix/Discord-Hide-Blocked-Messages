@@ -1,4 +1,7 @@
 # Hide Blocked Messages
+<br>
+As of 15/3/2021, this still works.
+<br>
 This repository is for those looking to hide the "1 blocked message - show message" messages from discord. If reading this far into the future, please note that this may not work, so don't complain to me if it stops working.
 <br>
 <br>

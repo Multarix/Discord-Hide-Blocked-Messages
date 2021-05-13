@@ -2,7 +2,7 @@
 // @name        Discord Hide Blocked Messages
 // @namespace   https://github.com/Multarix/Discord-Hide-Blocked-Messages
 // @match       https://discord.com/*
-// @downloadURL https://raw.githubusercontent.com/Multarix/Discord-Hide-Blocked-Messages/master/deleteDiscordMessages.user.js
+// @downloadURL https://raw.githubusercontent.com/Multarix/Discord-Hide-Blocked-Messages/master/script.user.js
 // @homepageURL https://github.com/Multarix/Discord-Hide-Blocked-Messages
 // @supportURL  https://github.com/Multarix/Discord-Hide-Blocked-Messages/issues
 // @grant       none

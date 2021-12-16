@@ -1,9 +1,9 @@
 # Hide Blocked Messages
 
-This still works as of 15/3/2021<br>
+This still works as of 15/12/2021 or 12/15/2021<br>
 This repository is for those looking to hide the "1 blocked message - show message" messages from discord. If reading this far into the future, please note that this may not work, so don't complain to me if it stops working.<br>
 
-###  **The script will need to re-pasted in every time you start discord. As such if you somehow fuck something up, restarting discord should fix whatever you broke.**
+###  **The script will boot on startup if you follow the instructions below within "Startup Run"**
 #### _**I hold no responsibility for you breaking your discord or other things happening**_
 
 <br>
@@ -31,3 +31,27 @@ function hideBlocked(){
 setInterval(hideBlocked, 500); // Repeat every half second. Recommended to keep at 500, but raise/ lower if you wish.
 
 ```
+
+
+### Startup Run
+
+WARNING: THIS DOES COUNT AS CLIENT MODIFICATION, Multarix or DinoTheDevOfficial HOLD NO ACCOUNTABILITY IF YOU GET BANNED BY DISCORD
+
+Open up the directory `%localappdata%/DiscordCanary` or where-ever Discord is installed too.
+
+Once in there open the app folder, once in add this onto the current directory: `modules/discord_krisp-1/discord_krisp` if that dosen't work try: `modules\discord_krisp-1\discord_krisp`
+
+in index.js add:
+```js
+function hideBlocked(){
+    const blocked = document.querySelectorAll('[class^="groupStart"]'); // Find all "Blocked Messages"
+    blocked.forEach(blokMsg => {
+        if(blokMsg.style.display !== "none") blokMsg.style.display = "none"; // Hide the message if it's not already hidden.
+    });
+};
+setInterval(hideBlocked, 500); // Repeat every half second. Recommended to keep at 500, but raise/ lower if you wish.
+```
+
+save and press ctrl + r or cmd + r in Discord and Boom! Your done! 
+
+P.S. This may affect your krisps 

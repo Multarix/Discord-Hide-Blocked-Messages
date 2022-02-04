@@ -1,5 +1,13 @@
 # Hide Blocked Messages
 
+IMPORTANT INFO - 26/01/2022
+Discord seems to have disabled accessing the developer console within the production version.
+There are currently 2 work arounds:
+
+1. Install and use Discord Canary. You can download canary here: https://canary.discord.com/
+2. Re-Enable it in discord settings (Reccomended). You can do this by going to %appdata%/discord/settings.json and adding the following line to the bottom:
+`"DANGEROUS_ENABLE_DEVTOOLS_ONLY_ENABLE_IF_YOU_KNOW_WHAT_YOURE_DOING": true` (Remember to add a comma on the previous line)
+
 This still works as of 15/12/2021 or 12/15/2021<br>
 This repository is for those looking to hide the "1 blocked message - show message" messages from discord. If reading this far into the future, please note that this may not work, so don't complain to me if it stops working.<br>
 

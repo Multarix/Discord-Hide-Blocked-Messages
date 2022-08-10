@@ -4,11 +4,11 @@ IMPORTANT INFO - 26/01/2022
 Discord seems to have disabled accessing the developer console within the production version.
 There are currently 2 work arounds:
 
-1. Install and use Discord Canary. You can download canary here: https://canary.discord.com/
-2. Re-Enable it in discord settings (Reccomended). You can do this by going to %appdata%/discord/settings.json and adding the following line to the bottom:
+1. Re-Enable it in discord settings (Recommended). You can do this by going to %appdata%/discord/settings.json and adding the following line to the bottom:
 `"DANGEROUS_ENABLE_DEVTOOLS_ONLY_ENABLE_IF_YOU_KNOW_WHAT_YOURE_DOING": true` (Remember to add a comma on the previous line)
+2. Install and use Discord Canary. You can download canary here: https://canary.discord.com/
 
-This still works as of 15/12/2021 or 12/15/2021<br>
+This still works as of August 9th, 2022<br>
 This repository is for those looking to hide the "1 blocked message - show message" messages from discord. If reading this far into the future, please note that this may not work, so don't complain to me if it stops working.<br>
 
 ###  **The script will boot on startup if you follow the instructions below within "Startup Run"**
@@ -30,14 +30,8 @@ Some things to note:
 - If you wish to unblock the person, the sidebar or your block list in the friends area is the best option.
 
 ```js
-function hideBlocked(){
-    const blocked = document.querySelectorAll('[class^="groupStart"]'); // Find all "Blocked Messages"
-    blocked.forEach(blokMsg => {
-        if(blokMsg.style.display !== "none") blokMsg.style.display = "none"; // Hide the message if it's not already hidden.
-    });
-};
-setInterval(hideBlocked, 500); // Repeat every half second. Recommended to keep at 500, but raise/ lower if you wish.
-
+const sheet = window.document.styleSheets[0];
+sheet.insertRule(`ol > [class^='groupStart-'] { display: none; }`, sheet.cssRules.length);
 ```
 
 
@@ -47,17 +41,12 @@ WARNING: THIS DOES COUNT AS CLIENT MODIFICATION, Multarix or DinoTheDevOfficial 
 
 Open up the directory `%localappdata%/DiscordCanary` or where-ever Discord is installed too.
 
-Once in there open the app folder, once in add this onto the current directory: `modules/discord_krisp-1/discord_krisp` if that dosen't work try: `modules\discord_krisp-1\discord_krisp`
+Once in there open the most recent app folder (should look something like `app-1.0.9005`), then navigate to the `modules` directory, then the `discord_krisp-1` directory. Your final path should look something like: `C:\Users\yourusername\AppData\Local\Discord\app-1.0.9005\modules`
 
-in index.js add:
+edit the file named `index.js` and add to the bottom:
 ```js
-function hideBlocked(){
-    const blocked = document.querySelectorAll('[class^="groupStart"]'); // Find all "Blocked Messages"
-    blocked.forEach(blokMsg => {
-        if(blokMsg.style.display !== "none") blokMsg.style.display = "none"; // Hide the message if it's not already hidden.
-    });
-};
-setInterval(hideBlocked, 500); // Repeat every half second. Recommended to keep at 500, but raise/ lower if you wish.
+const sheet = window.document.styleSheets[0];
+sheet.insertRule(`ol > [class^='groupStart-'] { display: none; }`, sheet.cssRules.length);
 ```
 
 save and press ctrl + r or cmd + r in Discord and Boom! Your done! 

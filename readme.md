@@ -41,9 +41,9 @@ WARNING: THIS DOES COUNT AS CLIENT MODIFICATION, Multarix or DinoTheDevOfficial 
 
 Open up the directory `%localappdata%/DiscordCanary` or where-ever Discord is installed too.
 
-Once in there open the app folder, once in add this onto the current directory: `modules/discord_krisp-1/discord_krisp` if that dosen't work try: `modules\discord_krisp-1\discord_krisp`
+Once in there open the most recent app folder (should look something like `app-1.0.9005`), then navigate to the `modules` directory, then the `discord_krisp-1` directory. Your final path should look something like: `C:\Users\yourusername\AppData\Local\Discord\app-1.0.9005\modules`
 
-in index.js add:
+edit the file named `index.js` and add to the bottom:
 ```js
 const sheet = window.document.styleSheets[0];
 sheet.insertRule(`ol > [class^='groupStart-'] { display: none; }`, sheet.cssRules.length);

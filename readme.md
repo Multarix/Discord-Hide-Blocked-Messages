@@ -8,7 +8,7 @@ There are currently 2 work arounds:
 `"DANGEROUS_ENABLE_DEVTOOLS_ONLY_ENABLE_IF_YOU_KNOW_WHAT_YOURE_DOING": true` (Remember to add a comma on the previous line)
 2. Install and use Discord Canary. You can download canary here: https://canary.discord.com/
 
-This still works as of August 9th, 2022<br>
+Last updated October 28th, 2023<br>
 This repository is for those looking to hide the "1 blocked message - show message" messages from discord. If reading this far into the future, please note that this may not work, so don't complain to me if it stops working.<br>
 
 ###  **The script will boot on startup if you follow the instructions below within "Startup Run"**

@@ -1,2 +1,3 @@
-const sheet = window.document.styleSheets[0];
-sheet.insertRule(`ol > [class^='groupStart-'] { display: none; }`, sheet.cssRules.length);
+const css = `ol > [class^='groupStart_'] { display: none; }`
+const style = document.createElement('style'); style.innerHTML = css;
+document.body.appendChild(style);

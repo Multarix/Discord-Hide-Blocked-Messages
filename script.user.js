@@ -6,10 +6,11 @@
 // @homepageURL https://github.com/Multarix/Discord-Hide-Blocked-Messages
 // @supportURL  https://github.com/Multarix/Discord-Hide-Blocked-Messages/issues
 // @grant       none
-// @version     2.0
-// @author      Anonymous
-// @description 10/28/2020, 1:37:40 PM
+// @version     2.1
+// @author      Multarix
+// @description Working as of: 28/10/2022
 // ==/UserScript==
 
-const sheet = window.document.styleSheets[0];
-sheet.insertRule(`ol > [class^='groupStart-'] { display: none; }`, sheet.cssRules.length);
+const css = `ol > [class^='groupStart_'] { display: none; }`
+const style = document.createElement('style'); style.innerHTML = css;
+document.body.appendChild(style);

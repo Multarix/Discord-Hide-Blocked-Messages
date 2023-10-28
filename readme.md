@@ -30,8 +30,9 @@ Some things to note:
 - If you wish to unblock the person, the sidebar or your block list in the friends area is the best option.
 
 ```js
-const sheet = window.document.styleSheets[0];
-sheet.insertRule(`ol > [class^='groupStart-'] { display: none; }`, sheet.cssRules.length);
+const css = `ol > [class^='groupStart_'] { display: none; }`
+const style = document.createElement('style'); style.innerHTML = css;
+document.body.appendChild(style);
 ```
 
 
@@ -45,8 +46,9 @@ Once in there open the most recent app folder (should look something like `app-1
 
 edit the file named `index.js` and add to the bottom:
 ```js
-const sheet = window.document.styleSheets[0];
-sheet.insertRule(`ol > [class^='groupStart-'] { display: none; }`, sheet.cssRules.length);
+const css = `ol > [class^='groupStart_'] { display: none; }`
+const style = document.createElement('style'); style.innerHTML = css;
+document.body.appendChild(style);
 ```
 
 save and press ctrl + r or cmd + r in Discord and Boom! Your done! 
